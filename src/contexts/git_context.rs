@@ -1,3 +1,5 @@
+use git2_extensions::Repository;
+
 pub struct GitContext<'c> {
-    pub repository_path: &'c str,
+    pub repository: Repository<'c>,
 }
